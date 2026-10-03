@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "sam.bitcoin",
+  "name": "Bitcoin Dashboard",
+  "version": "1.0.0",
+  "author": "samb770",
+  "description": "Bitcoin price, network stats, and upcoming Bitcoin holidays",
+  "homepage": "https://github.com/samb770/omarchy-bitcoin-dashboard",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Bitcoin",
+    "description": "Price, network stats, and Bitcoin holidays",
+    "category": "Info",
+    "allowMultiple": false
+  }
+}

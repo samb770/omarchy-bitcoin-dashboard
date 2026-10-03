@@ -1,0 +1,4 @@
+# Never commit the local shell.json or any copy of it — it is the user's
+# private config and can contain an encrypted vault (Bitcoin positions).
+shell.json
+*.shell.json
