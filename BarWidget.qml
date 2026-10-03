@@ -41,7 +41,8 @@ BarWidget {
     if (panelLoader.item) panelLoader.item.closeForPopoutSwitch()
   }
 
-  readonly property string displayText: panelLoader.item ? panelLoader.item.priceLabel : "₿ —"
+  readonly property string displayText: "₿"
+  readonly property string priceText: panelLoader.item ? panelLoader.item.priceLabel : "₿ —"
   readonly property bool trendUp: panelLoader.item ? panelLoader.item.change24h >= 0 : true
   readonly property bool hasData: panelLoader.item ? panelLoader.item.change24h !== null : false
 
@@ -67,6 +68,7 @@ BarWidget {
     anchors.fill: parent
     bar: root.bar
     text: root.displayText
+    tooltipText: root.priceText
     labelVisible: true
     hasVisualContent: true
     horizontalMargin: 8.75
